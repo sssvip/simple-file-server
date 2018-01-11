@@ -12,8 +12,8 @@ Transfer and browse files as simple as possiable via HTTP
     
     windonws: open cmd in this folder then ->
 
-         simplefileserver.exe 
-         2018/01/11 16:52:53 starttd file server http://127.0.0.1:80
+        > simplefileserver.exe 
+        > 2018/01/11 16:52:53 starttd file server http://127.0.0.1:80
     
     linux. open terminal in this folder then->
     
@@ -21,7 +21,7 @@ Transfer and browse files as simple as possiable via HTTP
         $ ./simplefileserver
         2018/01/11 16:52:53 starttd file server http://127.0.0.1:80
         
-3. Custom file server port
+3. [Option] Custom file server port 
     
     a. open on port 80 (Default): 
         
