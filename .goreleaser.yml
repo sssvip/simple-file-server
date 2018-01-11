@@ -1,5 +1,5 @@
 builds:
-  - binary: drum-roll
+  - binary: simplefileserver
     goos:
       - windows
       - darwin

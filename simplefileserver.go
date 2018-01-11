@@ -60,6 +60,7 @@ func main() {
 	}
 	http.HandleFunc("/", home)
 	http.HandleFunc(staticPath, func(w http.ResponseWriter, r *http.Request) {
+		log.Println(r.URL.Path)
 		http.ServeFile(w, r, r.URL.Path[len(staticPath):])
 	})
 	log.Println("starttd file server http://127.0.0.1:" + port)

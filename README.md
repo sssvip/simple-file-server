@@ -1,5 +1,9 @@
 # simple-file-server
-Transfer file as simple as possiable via HTTP
+Transfer and browse files as simple as possiable via HTTP
+
+# Preview
+
+![img](img/preview.gif)
 
 # Usage
 1. Download the binary from the [release page](https://github.com/sssvip/simple-file-server/releases), choose your os relational edition
