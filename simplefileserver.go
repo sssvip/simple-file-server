@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strconv"
+	"net"
 )
 
 var staticPath = "/static/"
@@ -47,12 +48,29 @@ func home(w http.ResponseWriter, r *http.Request) {
 	//}
 }
 
-func main() {
+func getLocalIPs() []string {
+	result := []string{"localhost"}
+	addrSlice, err := net.InterfaceAddrs()
+	if nil != err {
+		log.Println("Get local IP addr failed!!!")
+		return result
+	}
+	for _, addr := range addrSlice {
+		if ipnet, ok := addr.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if nil != ipnet.IP.To4() {
+				result = append(result, ipnet.IP.String())
+			}
+		}
+	}
+	return result
+}
+
+func entry() {
 	port := "80"
 	if len(os.Args) > 1 {
 		tmpPort, err := strconv.Atoi(os.Args[1])
 		if err != nil {
-			log.Println("http port must a num, eg: httpfile.exe 80")
+			log.Println("http port must a num, eg: simplefileserver.exe 80")
 			log.Println("use defualut http port:" + port)
 		} else {
 			port = strconv.Itoa(tmpPort)
@@ -64,5 +82,12 @@ func main() {
 		http.ServeFile(w, r, r.URL.Path[len(staticPath):])
 	})
 	log.Println("starttd file server http://127.0.0.1:" + port)
+	for _, localIp := range getLocalIPs() {
+		log.Println("Optional addr: http://" + localIp + ":" + port)
+	}
 	log.Fatal(http.ListenAndServe(":"+port, nil))
+}
+
+func main() {
+	entry()
 }

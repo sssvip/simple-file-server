@@ -1,4 +1,4 @@
-# simple-file-server
+# Simple-file-server
 Transfer and browse files as simple as possiable via HTTP
 
 # Preview
@@ -15,7 +15,7 @@ Transfer and browse files as simple as possiable via HTTP
         > simplefileserver.exe 
         > 2018/01/11 16:52:53 starttd file server http://127.0.0.1:80
     
-    linux. open terminal in this folder then->
+    linux: open terminal in this folder then->
     
         $ chmod 777 simplefileserver
         $ ./simplefileserver
