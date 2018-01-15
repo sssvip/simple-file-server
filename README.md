@@ -1,5 +1,7 @@
 # Simple-file-server
-Transfer and browse files as simple as possiable via HTTP
+Transfer and browse files as simple as possiable via HTTP. Supported Windows, Linux, Mac Os...
+
+通过HTTP方式，简单的文件传输(下载)和浏览工具。目前支持Windows, Linux, Mac等操作系统。
 
 # Preview
 

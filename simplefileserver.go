@@ -13,7 +13,7 @@ import (
 )
 
 var staticPath = "/static/"
-var repoUrl = "http://github.com/sssvip/SimpleFileServer"
+var repoUrl = "https://github.com/sssvip/simple-file-server"
 
 func listDir(dirPth string) (a []string) {
 	dir, err := ioutil.ReadDir(dirPth)
