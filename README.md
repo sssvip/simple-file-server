@@ -11,7 +11,7 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
 1. Download the binary from the [release page](https://github.com/sssvip/simple-file-server/releases), choose your os relational edition
    
    
-   国内加速便捷下载地址: [Windows](http://down.dxscx.com/simple-file-server_0.1.1_windows_amd64.tar.gz)        [Linux](http://down.dxscx.com/simple-file-server_0.1.1_linux_amd64.tar.gz)         [Mac](http://down.dxscx.com/simple-file-server_0.1.1_darwin_amd64.tar.gz) 
+   国内加速便捷下载地址: [Windows](http://down.dxscx.com/simple-file-server_current_windows_amd64.tar.gz)        [Linux](http://down.dxscx.com/simple-file-server_current_linux_amd64.tar.gz)         [Mac](http://down.dxscx.com/simple-file-server_current_darwin_amd64.tar.gz) 
 
 2. Put the binary to you want transfer or browse folder
     
