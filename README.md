@@ -1,7 +1,7 @@
 # Simple-file-server
-Transfer and browse files as simple as possiable via HTTP. Supported Windows, Linux, Mac Os...
+Transfer and browse files as simple as possiable via HTTP. Supported Windows, Linux, Mac Os... (Support QRCode output,mobile phone get file more simply)
 
-通过HTTP方式，简单的文件传输(下载)和浏览工具。目前支持Windows, Linux, Mac等操作系统。
+通过HTTP方式，简单的文件传输(下载)和浏览工具。目前支持Windows, Linux, Mac等操作系统。(支持输出二维码，方便手机直接扫码获取文件)
 
 # Preview
 
