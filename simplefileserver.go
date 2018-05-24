@@ -97,13 +97,13 @@ func entry() {
 		startEcho = fmt.Sprintf("%s:%s", startEcho, port)
 	}
 	log.Println(startEcho)
-	var optPreAddr = "Optional addr: http://"
+	var optPreAddr = "Optional addr: "
 	for _, localIp := range getLocalIPs() {
-		urlAddr := fmt.Sprintf("%s%s", optPreAddr, localIp)
+		urlAddr := fmt.Sprintf("http://%s", localIp)
 		if port != defaultPort {
 			urlAddr = fmt.Sprintf("%s:%s", urlAddr, port)
 		}
-		log.Println(urlAddr)
+		log.Println(fmt.Sprintf("%s%s",optPreAddr,urlAddr))
 		if showQRCode {
 			if showQRCodeIpFilter != qr {
 				if strings.Contains(urlAddr, strings.Replace(showQRCodeIpFilter, qr, "", -1)) {
