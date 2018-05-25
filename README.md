@@ -38,14 +38,16 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
         $ ./simplefileserver 8080
 
         
-4. [New Option] Show the url qrcode in the terminal.(Windows default window not support now)
+4. [New Feature] Show the url qrcode in the terminal. (Windows default window not support now)
 
     a. output all local ip addr qrcode:
     
-        > simplefileserver.exe qr
-        $ ./simplefileserver qr
+        > simplefileserver.exe 80  qr
+        $ ./simplefileserver 80 qr
         
-    b. output local ip addr qrcode with special key(eg: just output ip addr contains 192 once)
+    b. output local ip addr qrcode with filter key (eg: just output ip addr contains 192 once)
     
-        > simplefileserver.exe qr192
-        $ ./simplefileserver qr192     
+        > simplefileserver.exe 80 qr192
+        $ ./simplefileserver 80 qr192     
+        
+        ![img](img/qr192.png)
