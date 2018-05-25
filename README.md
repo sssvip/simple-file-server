@@ -50,4 +50,4 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
         > simplefileserver.exe 80 qr192
         $ ./simplefileserver 80 qr192     
         
-        ![img](img/qr192.png)
+      ![img](img/qr192.png)
