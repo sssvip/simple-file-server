@@ -7,6 +7,19 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
 
 ![img](img/preview.gif)
 
+
+# Fast Start
+1. Linux
+    
+        $ wget http://down.dxscx.com/simplefileserver
+        $ chmod 777 simplefileserver
+        $ ./simplefileserver
+
+2. Windows
+        
+        > http://down.dxscx.com/simplefileserver.exe         download it by your download tool
+        > simplefileserver.exe 
+        
 # Usage
 1. Download the binary from the [release page](https://github.com/sssvip/simple-file-server/releases), choose your os relational edition
    
