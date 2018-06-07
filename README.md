@@ -11,9 +11,10 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
 # Fast Start
 1. Linux
     
-        $ wget http://down.dxscx.com/simplefileserver
+        $ wget http://down.dxscx.com/simple-file-server_current_linux_amd64.tar.gz
+        $ tar -xzvf -xvsimple-file-server_current_linux_amd64.tar.gz
         $ chmod 777 simplefileserver
-        $ ./simplefileserver
+        $ sudo ./simplefileserver
 
 2. Windows
         
