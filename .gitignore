@@ -2,3 +2,4 @@
 *.exe
 /dist/*
 *.iml
+go.sum

@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strconv"
 	"net"
-	"github.com/mdp/qrterminal"
+	"github.com/sssvip/qrterminal"
 )
 
 var staticPath = "/static/"
@@ -89,7 +89,7 @@ func entry() {
 
 	http.HandleFunc("/", home)
 	http.HandleFunc(staticPath, func(w http.ResponseWriter, r *http.Request) {
-		log.Println(r.URL.Path)
+		log.Println(r.RemoteAddr, "=>", r.URL.Path)
 		http.ServeFile(w, r, r.URL.Path[len(staticPath):])
 	})
 	var startEcho = "started file server http://127.0.0.1"
@@ -103,7 +103,7 @@ func entry() {
 		if port != defaultPort {
 			urlAddr = fmt.Sprintf("%s:%s", urlAddr, port)
 		}
-		log.Println(fmt.Sprintf("%s%s",optPreAddr,urlAddr))
+		log.Println(fmt.Sprintf("%s%s", optPreAddr, urlAddr))
 		if showQRCode {
 			if showQRCodeIpFilter != qr {
 				if strings.Contains(urlAddr, strings.Replace(showQRCodeIpFilter, qr, "", -1)) {
