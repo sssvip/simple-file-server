@@ -1,6 +1,0 @@
-# github.com/sssvip/qr v0.2.1
-github.com/sssvip/qr
-github.com/sssvip/qr/coding
-github.com/sssvip/qr/gf256
-# github.com/sssvip/qrterminal v1.0.1
-github.com/sssvip/qrterminal
