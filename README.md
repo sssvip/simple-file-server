@@ -21,6 +21,12 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
         > http://down.dxscx.com/simplefileserver.exe         download it by your download tool
         > simplefileserver.exe 
         
+        or 
+        
+        > put the binary simplefileserver.exe to you want share folder then double click.
+       
+        > 你可以将simplefileserver.exe放在你想分享文件的文件夹(例如放在桌面),直接双击simplefileserver.exe及可分享文件,
+        
 # Usage
 1. Download the binary from the [release page](https://github.com/sssvip/simple-file-server/releases), choose your os relational edition
    
