@@ -71,3 +71,9 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
         $ ./simplefileserver 80 qr192     
         
       ![img](img/qr192.png)
+
+# other
+
+code need more readable, pull request, please.
+
+代码为初学golang时编写,确实有很多可读性的优化,设计和使用也存在不规范,防止用户依赖原特性使用,保证兼容式更新,在不影响原功能输出情况下,欢迎pr.
