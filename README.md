@@ -5,7 +5,7 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
 
 # Preview
 
-![img](img/preview.gif)
+![img](http://down.dxscx.com/simple-file-server-preview.gif)
 
 
 # Fast Start
@@ -70,7 +70,7 @@ Transfer and browse files as simple as possiable via HTTP. Supported Windows, Li
         > simplefileserver.exe 80 qr192
         $ ./simplefileserver 80 qr192     
         
-      ![img](img/qr192.png)
+      ![img](http://down.dxscx.com/qr192.png)
 
 # other
 
